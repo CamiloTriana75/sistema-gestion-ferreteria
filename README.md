@@ -1,5 +1,9 @@
 # 📦 Sistema Integral de Gestión para Ferreterías (SaaS)
 
+![Backend CI](https://github.com/tu-usuario/sistema-gestion-ferreteria/workflows/Backend%20CI/badge.svg)
+![Frontend CI](https://github.com/tu-usuario/sistema-gestion-ferreteria/workflows/Frontend%20CI/badge.svg)
+![CI/CD Pipeline](https://github.com/tu-usuario/sistema-gestion-ferreteria/workflows/CI%2FCD%20Pipeline/badge.svg)
+
 Sistema completo de gestión para ferreterías, diseñado como producto SaaS escalable, multi-empresa y preparado para integrar facturación electrónica por API.
 
 ## 🎯 Características Principales
@@ -42,7 +46,22 @@ Sistema completo de gestión para ferreterías, diseñado como producto SaaS esc
 
 ## 🚀 Inicio Rápido
 
-### Prerrequisitos
+### Setup Automático (Recomendado)
+
+**Windows:**
+```bash
+setup.bat
+```
+
+**Linux/Mac:**
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+### Setup Manual
+
+#### Prerrequisitos
 
 - Node.js 18.17+
 - Python 3.11+
@@ -149,12 +168,51 @@ sistema-gestion-ferreteria/
 └── README.md                   # Este archivo
 ```
 
-## 📝 Documentación
+## � CI/CD y Calidad de Código
 
+Este proyecto implementa un pipeline completo de CI/CD con GitHub Actions:
+
+- ✅ **Linting automático**: Black, Ruff, ESLint
+- ✅ **Verificación de tipos**: MyPy, TypeScript
+- ✅ **Pruebas automáticas**: pytest, Jest
+- ✅ **Análisis de seguridad**: Bandit, Safety
+- ✅ **Auto-formateo** de código en PRs
+- ✅ **Despliegue automático** a producción
+
+### 📚 Guías de CI/CD
+
+- **[⚡ Quick Start CI/CD](QUICK_START_CI.md)** - Configuración en 10 minutos
+- **[📖 Guía Completa CI/CD](CI_CD_GUIDE.md)** - Documentación detallada
+- **[🔧 Setup Scripts](setup.sh)** - Scripts de configuración automática
+
+### 🧪 Ejecutar Tests Localmente
+
+**Backend:**
+```bash
+cd backend
+pytest                          # Ejecutar tests
+pytest --cov=app                # Con cobertura
+black . && ruff check .         # Linting y formateo
+```
+
+**Frontend:**
+```bash
+cd frontend
+npm test                        # Ejecutar tests
+npm run lint                    # Linting
+npm run format                  # Formateo
+```
+
+## �📝 Documentación
+
+- **[⚡ Quick Start CI/CD](QUICK_START_CI.md)** - Configuración rápida de CI/CD
+- **[📖 Guía Completa CI/CD](CI_CD_GUIDE.md)** - Pipeline y despliegues
 - **Documentación Completa**: [sistema_gestion_ferreteria_completo.md](sistema_gestion_ferreteria_completo.md)
 - **Issues y Roadmap**: [ISSUES.md](ISSUES.md)
 - **Backend README**: [backend/README.md](backend/README.md)
 - **Frontend README**: [frontend/README.md](frontend/README.md)
+- **Configuración Supabase**: [SUPABASE_SETUP.md](SUPABASE_SETUP.md)
+- **Estrategia de Branching**: [BRANCHING_STRATEGY.md](BRANCHING_STRATEGY.md)
 
 ## 🚦 Fase Actual: MVP Core (Fase 1)
 
@@ -167,10 +225,16 @@ Actualmente trabajando en:
 - ⏳ POS básico
 - ⏳ Inventario básico
 
-Ver [ISSUES.md](ISSUES.md) para el roadmap completo.
+Por favor lee [CI_CD_GUIDE.md](CI_CD_GUIDE.md) para detalles sobre el proceso de desarrollo y cómo hacer contribuciones.
 
-## 🤝 Contribución
+### Flujo de Trabajo
 
+1. Crear rama feature: `git checkout -b feature/nueva-funcionalidad`
+2. Hacer cambios y commits: `git commit -m 'feat: nueva funcionalidad'`
+3. Formatear código: Ver comandos en la sección de CI/CD
+4. Push a la rama: `git push origin feature/nueva-funcionalidad`
+5. Crear Pull Request (el CI se ejecutará automáticamente)
+6. Esperar aprobación y merge
 1. Crear rama feature: `git checkout -b feature/nueva-funcionalidad`
 2. Hacer commits descriptivos: `git commit -m 'Add: nueva funcionalidad'`
 3. Push a la rama: `git push origin feature/nueva-funcionalidad`
