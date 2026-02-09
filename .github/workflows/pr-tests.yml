@@ -8,7 +8,6 @@ jobs:
   backend-tests:
     name: Backend Tests
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.changed_files, 'backend/')
     
     defaults:
       run:
@@ -54,7 +53,6 @@ jobs:
   frontend-tests:
     name: Frontend Tests
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.changed_files, 'frontend/')
     
     defaults:
       run:
