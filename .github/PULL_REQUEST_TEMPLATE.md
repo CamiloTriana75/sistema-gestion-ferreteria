@@ -1,32 +1,15 @@
-## 📝 ¿Qué cambia este PR?
+## ¿Qué hace este PR?
 
-<!-- Describe los cambios de forma clara -->
+<!-- Resume los cambios en 2-3 líneas -->
 
-## 🔗 Issue
+## Issue relacionado
 
 Closes #
 
-## 🏷️ Tipo
+## Checklist
 
-- [ ] 🐛 Bug fix
-- [ ] ✨ Feature nueva
-- [ ] 📝 Documentación
-- [ ] ♻️ Refactoring
-- [ ] 🔧 Otro
+- [ ] ✅ El código funciona y los tests pasan
+- [ ] 📝 Actualicé la documentación (si aplica)
+- [ ] ✨ Sin conflictos de merge
 
-## ✅ Checklist
-
-- [ ] El código funciona correctamente
-- [ ] Agregué/actualicé tests
-- [ ] Los tests pasan
-- [ ] Actualicé la documentación si era necesario
-- [ ] Seguí los estándares de código del proyecto
-- [ ] No hay conflictos de merge
-
-## 📸 Screenshots (si aplica)
-
-<!-- Agrega imágenes si hay cambios visuales -->
-
-## 📋 Notas adicionales
-
-<!-- Cualquier información extra para los revisores -->
+<!-- Screenshots o notas adicionales aquí si son necesarias -->
