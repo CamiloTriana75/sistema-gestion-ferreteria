@@ -97,6 +97,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests (when available)
-        run: npm test --if-present
-        continue-on-error: true
+      - name: Create .env.local for tests
+        run: |
+          cat > .env.local << EOF
+          NEXT_PUBLIC_SUPABASE_URL=https://example.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY=example-anon-key
+          NEXT_PUBLIC_API_URL=http://localhost:8000
+          EOF
+
+      - name: Run tests
+        run: npm test
+        continue-on-error: false

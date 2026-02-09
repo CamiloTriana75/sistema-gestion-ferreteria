@@ -79,13 +79,13 @@ jobs:
           timeout 30 bash -c 'until curl -f http://localhost:8000/health; do sleep 1; done'
 
       - name: Run integration tests
-        working-directory: ./backend
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
           SECRET_KEY: test-secret-key-for-integration
           API_URL: http://localhost:8000
+          PYTHONPATH: ${{ github.workspace }}/backend
         run: |
-          pytest tests/ -v -m integration || echo "No integration tests found"
+          pytest tests/backend/ -v -m integration || echo "No integration tests found"
 
       - name: Stop backend server
         if: always()
