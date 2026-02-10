@@ -47,7 +47,7 @@ Usamos **Scrum** para organizar el trabajo. Lee nuestra [Guía de Scrum](docs/pr
 5. **Contador** - Área financiera
 6. **Auditor** - Auditoría y reportes (opcional)
 
-## �️ Stack Tecnológico
+## 🛠️ Stack Tecnológico
 
 ### Backend
 - **FastAPI** - Framework web moderno y rápido
@@ -82,7 +82,12 @@ Usamos **Scrum** para organizar el trabajo. Lee nuestra [Guía de Scrum](docs/pr
 - Python 3.11+
 - PostgreSQL (o cuenta de Supabase)
 
-* 2. Backend Setup
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/Deibyd07/sistema-gestion-ferreteria.git
+cd sistema-gestion-ferreteria
+
+# 2. Backend Setup
 cd backend
 python -m venv venv
 venv\Scripts\activate  # Windows
@@ -118,24 +123,29 @@ Esta guía incluye:
 sistema-gestion-ferreteria/
 ├── backend/                    # API Backend (FastAPI)
 │   ├── app/
-│   │   ├── api/               # Endpoints
-│   │   ├── core/              # Configuración
-│   │   ├── db/                # Base de datos
+│   │   ├── api/               # Endpoints de la API
+│   │   ├── core/              # Configuración central
+│   │   ├── db/                # Configuración de BD
 │   │   ├── models/            # Modelos SQLAlchemy
 │   │   ├── schemas/           # Schemas Pydantic
 │   │   ├── services/          # Lógica de negocio
-│   │   └── main.py           # Punto de entrada
-│   ├── tests/                 # Tests
+│   │   ├── repositories/      # Acceso a datos
+│   │   └── main.py            # Punto de entrada
+│   ├── tests/                 # Tests unitarios
+│   ├── alembic/               # Migraciones de BD
 │   ├── requirements.txt       # Dependencias Python
 │   └── README.md
 │
 ├── frontend/                   # Aplicación Frontend (Next.js)
 │   ├── src/
-│   │   ├── app/              # App Router (páginas)
-│   │   ├── components/       # Componentes React
-│   │   ├── lib/              # Utilidades
-│   │   ├── services/         # API clients
-│   │   └── types/            # Tipos TypeScript
+│   │   ├── app/               # App Router (páginas)
+│   │   ├── components/        # Componentes React
+│   │   ├── lib/               # Utilidades y configs
+│   │   ├── services/          # API clients
+│   │   ├── types/             # Tipos TypeScript
+│   │   ├── contexts/          # React Contexts
+│   │   └── hooks/             # Custom Hooks
+│   ├── public/                # Assets estáticos
 │   ├── package.json
 │   └── README.md
 │
@@ -185,6 +195,8 @@ Por definir
 - 📖 **[Guía de Instalación](INSTALLATION.md)** - Setup detallado del proyecto
 - 🤝 **[Guía de Contribución](docs/CONTRIBUIR.md)** - Cómo contribuir al proyecto
 - 📜 **[Código de Conducta](CODE_OF_CONDUCT.md)** - Nuestros estándares comunitarios
+- 🎓 **[Guía de Bienvenida](WELCOME.md)** - Bienvenido al proyecto
+- 📚 **[Índice de Documentación](docs/DOCUMENTATION_INDEX.md)** - Toda la documentación
 
 ### Desarrollo y Arquitectura
 - 💻 **[Backend README](backend/README.md)** - Documentación del API
@@ -295,4 +307,4 @@ Por definir
 3. Explora el [Project Board](https://github.com/Deibyd07/Proyecto-Ferreteria/projects)
 4. ¡Elige tu primer issue!
 
-**Preguntas?** Abre un [Discussion](https://github.com/Deibyd07/Proyecto-Ferreteria/discussions) o comenta en un issue.
+**¿Preguntas?** Abre un [Discussion](https://github.com/Deibyd07/Proyecto-Ferreteria/discussions) o comenta en un issue.
