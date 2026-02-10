@@ -31,12 +31,12 @@ Este es un proyecto **open source** y ¡nos encantaría tu ayuda! Ya seas princi
 
 **Primeros Pasos:**
 1. Lee la [Guía de Instalación](INSTALLATION.md)
-2. Revisa la [Guía de Contribución](CONTRIBUTING.md)
+2. Revisa la [Guía de Contribución](docs/CONTRIBUIR.md)
 3. Explora nuestro [Project Board](https://github.com/Deibyd07/Proyecto-Ferreteria/projects)
 4. Busca issues etiquetados como [good first issue](https://github.com/Deibyd07/Proyecto-Ferreteria/labels/good%20first%20issue)
 
 **Metodología:**
-Usamos **Scrum** para organizar el trabajo. Lee nuestra [Guía de Scrum](docs/project/SCRUM_GUIDE.md) para entender cómo participar en Sprints.
+Usamos **Scrum** para organizar el trabajo. Lee nuestra [Guía de Scrum](docs/project/GUIA_SCRUM.md) para entender cómo participar en Sprints.
 
 ## 📋 Roles del Sistema
 
@@ -103,7 +103,7 @@ npm run dev
 - Frontend: http://localhost:3000
 
 **Ver la [Guía de Instalación Completa](INSTALLATION.md) para detalles.**
-📘 **[Guía de Configuración de Supabase](SUPABASE_SETUP.md)**
+📘 **[Guía de Configuración de Supabase](docs/setup/SETUP_SUPABASE.md)**
 
 Esta guía incluye:
 - Creación del proyecto en Supabase
@@ -139,16 +139,20 @@ sistema-gestion-ferreteria/
 │   ├── package.json
 │   └── README.md
 │
-├── docs/                       # Documentación (próximamente)
-├── ISSUES.md                   # Listado de issues del proyecto
-├── sistema_gestion_ferreteria_completo.md  # Documentación completa
+├── docs/                       # Documentación completa
+│   ├── INDICE_DOCUMENTACION.md # Índice y navegación de toda la docu
+│   ├── project/                # Metodología, procesos y especificaciones
+│   ├── database/               # Diseño y configuración de BD
+│   ├── security/               # Políticas de seguridad RLS
+│   └── setup/                  # Guías de configuración
 └── README.md                   # Este archivo
 ```
 
 ## 📝 Documentación
 
-- **Documentación Completa**: [sistema_gestion_ferreteria_completo.md](sistema_gestion_ferreteria_completo.md)
-- **Issues y Roadmap**: [ISSUES.md](ISSUES.md)
+- **Índice de Documentación**: [INDICE_DOCUMENTACION.md](docs/INDICE_DOCUMENTACION.md) - Navega todos los documentos del proyecto
+- **Documentación Completa**: [sistema_gestion_ferreteria_completo.md](docs/project/sistema_gestion_ferreteria_completo.md)
+- **Issues y Roadmap**: [docs/project/REPORTES_ISSUES.md](docs/project/REPORTES_ISSUES.md)
 - **Backend README**: [backend/README.md](backend/README.md)
 - **Frontend README**: [frontend/README.md](frontend/README.md)
 
@@ -163,7 +167,7 @@ Actualmente trabajando en:
 - ⏳ POS básico
 - ⏳ Inventario básico
 
-Ver [ISSUES.md](ISSUES.md) para el roadmap completo.
+Ver [docs/project/REPORTES_ISSUES.md](docs/project/REPORTES_ISSUES.md) para el roadmap completo.
 
 ## 🤝 Contribución
 
@@ -179,18 +183,18 @@ Por definir
 
 ### Para Usuarios y Desarrolladores
 - 📖 **[Guía de Instalación](INSTALLATION.md)** - Setup detallado del proyecto
-- 🤝 **[Guía de Contribución](CONTRIBUTING.md)** - Cómo contribuir al proyecto
+- 🤝 **[Guía de Contribución](docs/CONTRIBUIR.md)** - Cómo contribuir al proyecto
 - 📜 **[Código de Conducta](CODE_OF_CONDUCT.md)** - Nuestros estándares comunitarios
 
 ### Desarrollo y Arquitectura
 - 💻 **[Backend README](backend/README.md)** - Documentación del API
 - 🎨 **[Frontend README](frontend/README.md)** - Documentación del Frontend
-- 🗄️ **[Diseño de Base de Datos](docs/database/DATABASE_DESIGN.md)** - Schema y relaciones
+- 🗄️ **[Diseño de Base de Datos](docs/database/DISEÑO_BASE_DATOS.md)** - Schema y relaciones
 - 🏗️ **[Documentación Completa](docs/project/sistema_gestion_ferreteria_completo.md)** - Arquitectura completa
 
 ### Metodología Scrum
-- 🏃 **[Guía de Scrum](docs/project/SCRUM_GUIDE.md)** - Cómo trabajamos con Scrum
-- 📋 **[Product Backlog](docs/project/PRODUCT_BACKLOG.md)** - Roadmap y funcionalidades
+- 🏃 **[Guía de Scrum](docs/project/GUIA_SCRUM.md)** - Cómo trabajamos con Scrum
+- 📋 **[Product Backlog](docs/project/BACKLOG_PRODUCTO.md)** - Roadmap y funcionalidades
 - ✅ �️ Roadmap
 
 Estamos en **Q1 2026**, trabajando en las bases del sistema.
@@ -214,7 +218,7 @@ Estamos en **Q1 2026**, trabajando en las bases del sistema.
 ### Q4 2026 (Octubre - Diciembre)
 - **Epic 11-13**: Optimizaciones, features adicionales y preparación para producción
 
-Ver el [Product Backlog](docs/project/PRODUCT_BACKLOG.md) completo para más detalles.
+Ver el [Product Backlog](docs/project/BACKLOG_PRODUCTO.md) completo para más detalles.
 
 ## 🎯 Sprint Actual
 
@@ -241,7 +245,7 @@ Seguimos metodología **Scrum** con Sprints de 2 semanas.
    ```
 
 3. **Desarrolla** siguiendo nuestros estándares:
-   - Sigue [estándares de código](CONTRIBUTING.md#estándares-de-código)
+   - Sigue [estándares de código](CONTRIBUIR.md#estándares-de-código)
    - Escribe tests
    - Actualiza documentación
 
@@ -252,7 +256,7 @@ Seguimos metodología **Scrum** con Sprints de 2 semanas.
 
 5. **Merge**: Una vez aprobado, se hará merge a la épica
 
-**Lee la [Guía Completa de Contribución](CONTRIBUTING.md)** para todos los detalles.
+**Lee la [Guía Completa de Contribución](docs/CONTRIBUIR.md)** para todos los detalles.
 
 ### Eventos de Scrum
 
@@ -263,7 +267,7 @@ Participamos en eventos Scrum (mayormente asíncronos en GitHub):
 - 🎉 **Sprint Review** - Demo de funcionalidades (fin del Sprint)
 - 🔄 **Sprint Retrospective** - Mejora continua (después de Review)
 
-Lee la [Guía de Scrum](docs/project/SCRUM_GUIDE.md) para detalles.
+Lee la [Guía de Scrum](docs/project/GUIA_SCRUM.md) para detalles.
 
 ## 👥 Comunidad
 
@@ -287,7 +291,7 @@ Por definir
 
 **¿Listo para contribuir?** 🚀
 1. Lee [INSTALLATION.md](INSTALLATION.md)
-2. Revisa [CONTRIBUTING.md](CONTRIBUTING.md)
+2. Revisa [docs/CONTRIBUIR.md](docs/CONTRIBUIR.md)
 3. Explora el [Project Board](https://github.com/Deibyd07/Proyecto-Ferreteria/projects)
 4. ¡Elige tu primer issue!
 
